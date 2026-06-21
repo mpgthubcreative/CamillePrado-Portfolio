@@ -1,0 +1,282 @@
+/* =========================================================
+   Responsive scaling: 768px (tablet layout reference) up to 1920px
+   ========================================================= */
+
+@media (min-width: 768px) {
+
+    .site-header .logo {
+        width: 280px;
+    }
+
+    /* ---- Hero becomes a two-column row ---- */
+    .hero-inner {
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+        max-width: var(--container);
+        margin: 0 auto;
+        padding: 3rem 2.5rem;
+    }
+
+    .hero-media,
+    .hero-content {
+        flex: 1 1 50%;
+        padding: 0;
+    }
+
+    .hero-content {
+        order: -1;
+    }
+
+    .hero-content h1 {
+        font-size: 2.4rem;
+    }
+
+    .hero-content .lead {
+        font-size: 1rem;
+        max-width: 460px;
+    }
+
+    /* ---- Projects intro ---- */
+    .projects-intro {
+        padding: 4rem 2.5rem 3rem;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    /* ---- Project cards: alternating two-column rows ---- */
+    .project {
+        max-width: var(--container);
+        margin: 0 auto;
+        padding: 0 2.5rem 4.5rem;
+        display: flex;
+        align-items: center;
+        gap: 4rem;
+    }
+
+    .project-media,
+    .project-content {
+        flex: 1 1 50%;
+        margin-bottom: 0;
+    }
+
+    .project:nth-of-type(2) {
+        flex-direction: row-reverse;
+    }
+
+    .project-content h3 {
+        font-size: 1.7rem;
+    }
+
+    .project-content p {
+        font-size: 0.96rem;
+    }
+
+    .project-content .btn-block {
+        display: inline-block;
+        width: auto;
+    }
+
+    /* ---- Websites grid: single row of four ---- */
+    .websites {
+        padding: 4.5rem 2.5rem;
+    }
+
+    .websites .section-title,
+    .websites .btn {
+        max-width: var(--container);
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .websites .btn {
+        display: inline-block;
+        width: auto;
+    }
+
+    .websites-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1.5rem;
+        max-width: var(--container);
+        margin: 2.5rem auto;
+    }
+
+    /* ---- Feature sections: side-by-side ---- */
+    .feature-graphic,
+    .feature-logo,
+    .feature-events {
+        display: flex;
+        align-items: center;
+        max-width: var(--container);
+        margin: 0 auto;
+        gap: 3.5rem;
+    }
+
+    .feature-media,
+    .feature-content {
+        flex: 1 1 50%;
+    }
+
+    .feature-logo {
+        flex-direction: row-reverse;
+    }
+
+    .feature-content {
+        padding: 2.5rem 0;
+    }
+
+    .feature-logo .feature-content {
+        padding-top: 2.5rem;
+    }
+
+    .feature-events .feature-content {
+        padding-top: 2.5rem;
+    }
+
+    .feature-content h2 {
+        font-size: 2rem;
+    }
+
+    .feature-content p {
+        font-size: 0.98rem;
+        max-width: 440px;
+    }
+
+    .feature-badge {
+        right: -1.5rem;
+    }
+
+    /* ---- About: two columns ---- */
+    .about {
+        max-width: var(--container);
+        margin: 0 auto;
+        padding: 5rem 2.5rem;
+        display: flex;
+        align-items: center;
+        gap: 4rem;
+    }
+
+    .about-media,
+    .about-content {
+        flex: 1 1 50%;
+    }
+
+    .about-media img {
+        margin-bottom: 0;
+    }
+
+    .about-content h2 {
+        font-size: 2.1rem;
+    }
+
+    .about-content p {
+        font-size: 0.98rem;
+    }
+
+    /* ---- Testimonials: three columns ---- */
+    .testimonials {
+        padding: 5rem 2.5rem;
+    }
+
+    .testimonials-grid {
+        grid-template-columns: repeat(3, 1fr);
+        max-width: var(--container);
+        margin: 0 auto;
+        gap: 2rem;
+    }
+
+    /* ---- Footer ---- */
+    .site-footer {
+        padding: 5rem 2.5rem;
+    }
+
+    .site-footer h2 {
+        font-size: 2.2rem;
+    }
+
+    .footer-contacts {
+        display: flex;
+        justify-content: center;
+        gap: 2.5rem;
+    }
+
+    .site-footer .btn {
+        display: inline-block;
+        width: auto;
+        padding: 1rem 3rem;
+    }
+}
+
+/* ---- Wider desktops: scale spacing & type a little further ---- */
+@media (min-width: 1024px) {
+    :root {
+        --container: 1280px;
+    }
+
+    .hero-content h1 {
+        font-size: 2.7rem;
+    }
+
+    .feature-content h2 {
+        font-size: 2.2rem;
+    }
+
+    .about-content h2 {
+        font-size: 2.3rem;
+    }
+
+    .site-footer h2 {
+        font-size: 2.4rem;
+    }
+}
+
+@media (min-width: 1440px) {
+    :root {
+        --container: 1320px;
+    }
+
+    body {
+        font-size: 1.05rem;
+    }
+
+    .hero-content h1 {
+        font-size: 3rem;
+    }
+
+    .hero-content .lead {
+        font-size: 1.05rem;
+        max-width: 500px;
+    }
+
+    .feature-content h2 {
+        font-size: 2.4rem;
+    }
+
+    .feature-content p {
+        max-width: 480px;
+    }
+
+    .about-content h2 {
+        font-size: 2.5rem;
+    }
+
+    .testimonial h3 {
+        font-size: 1.45rem;
+    }
+}
+
+@media (min-width: 1920px) {
+    :root {
+        --container: 1440px;
+    }
+
+    .hero-content h1 {
+        font-size: 3.4rem;
+    }
+
+    .site-footer h2 {
+        font-size: 2.7rem;
+    }
+}
