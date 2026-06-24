@@ -99,7 +99,7 @@ a {
 }
 
 .site-header .logo {
-    width: 230px;
+    width: 178px;
     margin: 0 auto;
     height: auto;
 }
@@ -145,7 +145,7 @@ a {
 .btn.btn-navy.btn-hero {
     font-size: 1.5rem;
     width: 100%;
-    padding: 1.2rem 2.4rem;
+    padding: 1.8rem 2.4rem;
     font-weight: 500;
     letter-spacing: 2.25px;
     line-height: 1;
@@ -153,12 +153,12 @@ a {
 
 .hero-media {
     position: relative;
-    padding: 2.7rem var(--pad-x) 0;
+    padding: 4rem 2.7rem 1rem 2.7rem;
 }
 
 .hero-badge {
     position: absolute;
-    top: -.5rem;
+    top: 1rem;
     left: 4.2rem;
     width: 98px;
     z-index: 2;
