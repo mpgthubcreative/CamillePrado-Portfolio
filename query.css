@@ -4,18 +4,24 @@
 
 @media (min-width: 768px) {
 
+
+    .container{
+        width: 768px;
+        margin: 0 auto;
+    }
+
     .site-header .logo {
-        width: 280px;
+        width: 156px;
     }
 
     /* ---- Hero becomes a two-column row ---- */
     .hero-inner {
         display: flex;
         align-items: center;
-        gap: 3rem;
+        gap: 3.5rem;
         max-width: var(--container);
         margin: 0 auto;
-        padding: 3rem 2.5rem;
+        padding: 5rem 10rem 5rem 10rem;
     }
 
     .hero-media,
@@ -23,19 +29,63 @@
         flex: 1 1 50%;
         padding: 0;
     }
+.hero-image-mobile {
+    width: 100%;
+    border-radius: 4px;
+    box-shadow: 0 20px 40px rgba(31, 58, 92, 0.18);
+    display: none;
+}
+
+.hero-image-desktop {
+    width: 100%;
+    border-radius: 4px;
+    box-shadow: 0 20px 40px rgba(31, 58, 92, 0.18);
+    display: block;
+}
+
+.hero-badge {
+    position: absolute;
+    top: 1rem;
+    left: -2.5rem;
+    width: 60px;
+    z-index: 2;
+}
 
     .hero-content {
         order: -1;
     }
 
-    .hero-content h1 {
-        font-size: 2.4rem;
+
+    .hero-content{
+        font-size: 1rem;
+        max-width: 232px;
     }
 
-    .hero-content .lead {
-        font-size: 1rem;
-        max-width: 460px;
-    }
+    .eyebrow {
+    font-size: .72rem;
+    font-weight: 500;
+      margin-bottom: 1.2rem;
+}
+
+.hero-header {
+    font-size: 2.2rem;
+     margin-bottom: 1.2rem;
+}
+
+.lead {
+    font-size: .6rem;
+    margin-bottom: 1rem;
+}
+
+.btn.btn-navy.btn-hero {
+    font-size: .6rem;
+    width: 12rem;
+    padding: 1rem .5rem;
+    font-weight: 400;
+    letter-spacing: 1.6px;
+    line-height: 1;
+}
+
 
     /* ---- Projects intro ---- */
     .projects-intro {
@@ -60,6 +110,7 @@
     .project-content {
         flex: 1 1 50%;
         margin-bottom: 0;
+        padding: 0;
     }
 
     .project:nth-of-type(2) {
@@ -101,6 +152,10 @@
         gap: 1.5rem;
         max-width: var(--container);
         margin: 2.5rem auto;
+    }
+
+    .websites-grid .websites-extra {
+        display: block;
     }
 
     /* ---- Feature sections: side-by-side ---- */
@@ -211,13 +266,86 @@
 
 /* ---- Wider desktops: scale spacing & type a little further ---- */
 @media (min-width: 1024px) {
-    :root {
-        --container: 1280px;
+  
+    .container{
+        width: 1024px;
+        margin: 0 auto;
+    }
+    
+
+     .site-header .logo {
+        width: 208px;
+    }
+  .hero-inner {
+        display: flex;
+        align-items: center;
+        gap: 4.5rem;
+        max-width: var(--container);
+        margin: 0 auto;
+        padding: 8rem 13rem 8rem 13rem;
     }
 
-    .hero-content h1 {
-        font-size: 2.7rem;
+    .hero-media,
+    .hero-content {
+        flex: 1 1 50%;
+        padding: 0;
     }
+.hero-image-mobile {
+    width: 100%;
+    border-radius: 4px;
+    box-shadow: 0 20px 40px rgba(31, 58, 92, 0.18);
+    display: none;
+}
+
+.hero-image-desktop {
+    width: 100%;
+    border-radius: 4px;
+    box-shadow: 0 20px 40px rgba(31, 58, 92, 0.18);
+    display: block;
+}
+
+.hero-badge {
+    position: absolute;
+    top: 1.5rem;
+    left: -rem;
+    width: 81px;
+    z-index: 2;
+}
+
+    .hero-content {
+        order: -1;
+    }
+
+
+    .hero-content{
+        font-size: 1rem;
+        max-width: 309px;
+    }
+
+    .eyebrow {
+    font-size: .96rem;
+    font-weight: 500;
+      margin-bottom: 1.2rem;
+}
+
+.hero-header {
+    font-size: 2.9rem;
+     margin-bottom: 1.2rem;
+}
+
+.lead {
+    font-size: .8rem;
+    margin-bottom: 1rem;
+}
+
+.btn.btn-navy.btn-hero {
+    font-size: .8rem;
+    width: 15rem;
+    padding: 1rem .5rem;
+    font-weight: 400;
+    letter-spacing: 1.6px;
+    line-height: 1;
+}
 
     .feature-content h2 {
         font-size: 2.2rem;
@@ -232,23 +360,159 @@
     }
 }
 
+@media (min-width: 1200px) {
+   
+    .container{
+        width: 1200px;
+        margin: 0 auto;
+    }
+    
+
+      .site-header .logo {
+        width: 244px;
+    }
+
+  .hero-inner {
+        display: flex;
+        align-items: center;
+        gap: 7.5rem;
+        max-width: var(--container);
+        margin: 0 auto;
+        padding: 9rem 15rem 9rem 15rem;
+    }
+
+    .hero-media,
+    .hero-content {
+        flex: 1 1 50%;
+        padding: 0;
+    }
+
+.hero-badge {
+    position: absolute;
+    top: 2rem;
+    left: -3.5rem;
+    width: 95px;
+    z-index: 2;
+}
+
+    .hero-content {
+        order: -1;
+    }
+
+    
+
+
+    .hero-content{
+        font-size: 1rem;
+        max-width: 363px;
+        padding-left: 3rem;
+    }
+
+    .eyebrow {
+    font-size: 1.1rem;
+    font-weight: 500;
+      margin-bottom: 1.2rem;
+}
+
+.hero-header {
+    font-size: 3.4rem;
+     margin-bottom: 1.2rem;
+}
+
+.lead {
+    font-size: .93rem;
+    margin-bottom: 1rem;
+}
+
+.btn.btn-navy.btn-hero {
+    font-size: .93rem;
+    width: 15rem;
+    padding: 1rem .5rem;
+    font-weight: 400;
+    letter-spacing: 1.6px;
+    line-height: 1;
+}
+}
+
+
+
+
 @media (min-width: 1440px) {
-    :root {
-        --container: 1320px;
+    
+    .container{
+        width: 1440px;
+        margin: 0 auto;
+    }
+    
+  .site-header .logo {
+        width: 293px;
     }
 
-    body {
-        font-size: 1.05rem;
+  .hero-inner {
+        display: flex;
+        align-items: center;
+        gap: 9.5rem;
+        max-width: 1920px;
+        margin: 0 auto;
+        padding: 11rem 18rem 11rem 18rem;
     }
 
-    .hero-content h1 {
-        font-size: 3rem;
+    .hero-media,
+    .hero-content {
+        flex: 1 1 50%;
+        padding: 0;
     }
 
-    .hero-content .lead {
-        font-size: 1.05rem;
-        max-width: 500px;
+.hero-image-desktop {
+    width: 100%;
+    border-radius: 4px;
+    box-shadow: 0 20px 40px rgba(31, 58, 92, 0.18);
+    display: block;
+}
+
+.hero-badge {
+    position: absolute;
+    top: 2rem;
+    left: -4.5rem;
+    width: 114px;
+    z-index: 2;
+}
+
+    .hero-content {
+        order: -1;
     }
+
+
+    .hero-content{
+        font-size: 1rem;
+        max-width: 435px;
+        padding-left: 0rem;
+    }
+
+    .eyebrow {
+    font-size: 1.35rem;
+    font-weight: 500;
+      margin-bottom: 1.2rem;
+}
+
+.hero-header {
+    font-size: 4.1rem;
+     margin-bottom: 1.2rem;
+}
+
+.lead {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.btn.btn-navy.btn-hero {
+    font-size: 1.2rem;
+    width: 22rem;
+    padding: 1.2rem 1.5rem;
+    font-weight: 400;
+    letter-spacing: 1.6px;
+    line-height: 1;
+}
 
     .feature-content h2 {
         font-size: 2.4rem;
@@ -268,13 +532,81 @@
 }
 
 @media (min-width: 1920px) {
-    :root {
-        --container: 1440px;
+     .container{
+        width: 1920px;
+        margin: 0 auto;
+    }
+    
+     .site-header .logo {
+        width: 390px;
     }
 
-    .hero-content h1 {
-        font-size: 3.4rem;
+  .hero-inner {
+        display: flex;
+        align-items: center;
+        gap: 11.5rem;
+        max-width: 1920px;
+        margin: 0 auto;
+        padding: 14rem 18rem 14rem 18rem;
     }
+
+    .hero-media,
+    .hero-content {
+        flex: 1 1 50%;
+        padding: 0;
+    }
+
+.hero-image-desktop {
+    width: 100%;
+    border-radius: 4px;
+    box-shadow: 0 20px 40px rgba(31, 58, 92, 0.18);
+    display: block;
+}
+
+.hero-badge {
+    position: absolute;
+    top: 3rem;
+    left: -6rem;
+    width: 152px;
+    z-index: 2;
+}
+
+    .hero-content {
+        order: -1;
+    }
+
+
+    .hero-content{
+        font-size: 1rem;
+        max-width: 580px;
+        padding-left: 0rem;
+    }
+
+    .eyebrow {
+    font-size: 1.8rem;
+    font-weight: 500;
+      margin-bottom: 1.2rem;
+}
+
+.hero-header {
+    font-size: 5.5rem;
+     margin-bottom: 1.8rem;
+}
+
+.lead {
+    font-size: 1.5rem;
+    margin-bottom: 1.8rem;
+}
+
+.btn.btn-navy.btn-hero {
+    font-size: 1.5rem;
+    width: 25rem;
+    padding: 1.5rem 1.7rem;
+    font-weight: 400;
+    letter-spacing: 1.6px;
+    line-height: 1;
+}
+    
 
     .site-footer h2 {
         font-size: 2.7rem;

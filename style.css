@@ -1,5 +1,5 @@
 :root {
-    --navy: #1f3a5c;
+    --navy: #213d5e;
     --navy-mid: #4173b0;
     --blue-pale: #c3d7ea;
     --cream: #fbf5f5;
@@ -13,6 +13,7 @@
     --font-sans: 'DM Sans', sans-serif;
 
     --container: 1200px;
+    --pad-x: 2.5rem;
 }
 
 * {
@@ -23,6 +24,7 @@
 
 html {
     scroll-behavior: smooth;
+    font-size: 62.5%;
 }
 
 body {
@@ -42,27 +44,11 @@ a {
     color: inherit;
 }
 
-.eyebrow {
-    font-family: var(--font-sans);
-    text-transform: uppercase;
-    letter-spacing: 0.18em;
-    font-size: 0.78rem;
-    font-weight: 700;
-    color: var(--navy-mid);
-    margin-bottom: 0.9rem;
+.container{
+    width: 428px;
+    margin: 0 auto;
 }
 
-.eyebrow-light {
-    color: var(--white);
-}
-
-h1, h2, h3 {
-    font-family: var(--font-serif);
-    font-style: italic;
-    font-weight: 500;
-    color: var(--navy);
-    line-height: 1.25;
-}
 
 .btn {
     display: inline-block;
@@ -109,7 +95,7 @@ h1, h2, h3 {
 .site-header {
     background: var(--white);
     text-align: center;
-    padding: 1.6rem 1.5rem;
+    padding: 1.6rem var(--pad-x);
 }
 
 .site-header .logo {
@@ -124,70 +110,112 @@ h1, h2, h3 {
     background: var(--blue-pale);
 }
 
+.eyebrow {
+    font-family: var(--font-sans);
+    text-transform: uppercase;
+    letter-spacing: 2.25px;
+    line-height: 1;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--navy);
+    margin-bottom: 1.5rem;
+}
+
+.eyebrow-light {
+    color: var(--white);
+}
+
+
+.hero-header {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.14;
+    color: #213D5E;
+    font-family: var(--font-serif);
+    font-weight: 600;
+    font-style: italic;
+}
+
+.lead{
+    font-size: 1.5rem;
+    color: var(--navy);
+    margin-bottom: 1.6rem;
+}
+
+.btn.btn-navy.btn-hero {
+    font-size: 1.5rem;
+    width: 100%;
+    padding: 1.2rem 2.4rem;
+    font-weight: 500;
+    letter-spacing: 2.25px;
+    line-height: 1;
+}
+
 .hero-media {
     position: relative;
-    padding: 2rem 1.5rem 0;
+    padding: 2.7rem var(--pad-x) 0;
 }
 
 .hero-badge {
     position: absolute;
-    top: 0.5rem;
-    left: 1.5rem;
-    width: 86px;
+    top: -.5rem;
+    left: 4.2rem;
+    width: 98px;
     z-index: 2;
 }
 
-.hero-image {
+.hero-image-mobile {
     width: 100%;
     border-radius: 4px;
     box-shadow: 0 20px 40px rgba(31, 58, 92, 0.18);
 }
 
+.hero-image-desktop {
+    width: 100%;
+    border-radius: 4px;
+    box-shadow: 0 20px 40px rgba(31, 58, 92, 0.18);
+    display: none;
+}
+
 .hero-content {
-    padding: 2rem 1.5rem 3rem;
+    padding: 2rem var(--pad-x) 2.4rem;
 }
 
-.hero-content h1 {
-    font-size: 1.9rem;
-    margin-bottom: 1.1rem;
-}
-
-.hero-content .lead {
-    font-size: 0.95rem;
-    margin-bottom: 1.8rem;
-}
 
 /* ---------- Projects intro ---------- */
 
 .projects-intro {
     background: var(--cream);
-    padding: 3rem 1.5rem 2.5rem;
+    padding: 3rem var(--pad-x) 2.5rem;
 }
 
 /* ---------- Project cards ---------- */
 
 .project {
     background: var(--cream);
-    padding: 0 1.5rem 3.5rem;
+    padding-bottom: 3.5rem;
 }
 
 .project-media {
     position: relative;
-    margin-bottom: 1.8rem;
+    margin-bottom: 1.5rem;
 }
 
 .project-badge {
     position: absolute;
-    top: -1.1rem;
-    left: -0.4rem;
-    width: 78px;
+    top: 1.4rem;
+    left: 1.5rem;
+    width: 98px;
     z-index: 2;
 }
 
 .project-image {
     width: 100%;
-    border-radius: 4px;
-    box-shadow: 0 16px 36px rgba(31, 58, 92, 0.12);
+    display: block;
+}
+
+.project-content {
+    padding: 0 var(--pad-x);
 }
 
 .project-content h3 {
@@ -213,7 +241,7 @@ h1, h2, h3 {
 
 .websites {
     background: var(--gray-bg);
-    padding: 3rem 1.5rem;
+    padding: 3rem var(--pad-x);
     text-align: center;
 }
 
@@ -228,6 +256,10 @@ h1, h2, h3 {
     width: 100%;
     border-radius: 4px;
     box-shadow: 0 10px 24px rgba(31, 58, 92, 0.1);
+}
+
+.websites-grid .websites-extra {
+    display: none;
 }
 
 /* ---------- Feature sections (graphic / logo / events) ---------- */
@@ -249,7 +281,7 @@ h1, h2, h3 {
 }
 
 .feature-content {
-    padding: 4rem 1.5rem 3rem;
+    padding: 4rem var(--pad-x) 3rem;
 }
 
 .feature-content h2 {
@@ -264,6 +296,10 @@ h1, h2, h3 {
 
 .feature-graphic {
     background: var(--navy-mid);
+    color: var(--white);
+}
+
+.feature-graphic .feature-content h2 {
     color: var(--white);
 }
 
@@ -288,11 +324,49 @@ h1, h2, h3 {
     padding-top: 2.5rem;
 }
 
+.events-media {
+    position: relative;
+    aspect-ratio: 428 / 347.75;
+}
+
+.events-media .events-bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.events-card {
+    position: absolute;
+    object-fit: cover;
+    border-radius: 2px;
+}
+
+.events-card-1 {
+    left: 20.6%;
+    top: 14.5%;
+    width: 40.5%;
+    height: 66.5%;
+    box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.events-card-2 {
+    left: 53.5%;
+    top: 22.3%;
+    width: 35.8%;
+    height: 62.3%;
+    box-shadow: 5px 3px 10px rgba(0, 0, 0, 0.15);
+}
+
 /* ---------- About ---------- */
 
 .about {
     background: var(--white);
-    padding: 3.5rem 1.5rem;
+    padding: 3.5rem var(--pad-x);
+}
+
+.about-media {
+    position: relative;
 }
 
 .about-media img {
@@ -300,6 +374,19 @@ h1, h2, h3 {
     border-radius: 4px;
     margin-bottom: 2rem;
     box-shadow: 0 16px 36px rgba(31, 58, 92, 0.1);
+}
+
+.about-badge {
+    position: absolute;
+    bottom: 1.2rem;
+    right: -0.4rem;
+    width: 92px !important;
+    height: 92px;
+    border-radius: 50%;
+    background: var(--blue-pale);
+    box-shadow: 0 6px 16px rgba(31, 58, 92, 0.18);
+    margin-bottom: 0 !important;
+    z-index: 2;
 }
 
 .about-content h2 {
@@ -316,7 +403,7 @@ h1, h2, h3 {
 
 .testimonials {
     background: var(--gray-bg);
-    padding: 3.5rem 1.5rem;
+    padding: 3.5rem var(--pad-x);
     text-align: center;
 }
 
@@ -326,7 +413,7 @@ h1, h2, h3 {
 
 .testimonials-grid {
     display: grid;
-    gap: 2.4rem;
+    gap: 3rem;
 }
 
 .testimonial {
@@ -378,7 +465,7 @@ h1, h2, h3 {
     background: var(--navy);
     color: var(--white);
     text-align: center;
-    padding: 4rem 1.5rem;
+    padding: 2.8rem var(--pad-x) 3rem;
 }
 
 .site-footer h2 {

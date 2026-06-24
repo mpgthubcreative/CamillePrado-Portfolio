@@ -18,6 +18,7 @@
 <body>
 
     <main>
+        <div class="container">
 
         <header class="site-header">
             <img src="Camille Assets/logo.png" alt="Camille Prado - Digital Creatives" class="logo">
@@ -28,15 +29,17 @@
                 <div class="hero-media">
                     <img src="Camille Assets/badge-hero-designedtoconvert.png" alt="Designed to convert" class="hero-badge">
                     <picture>
-                        <source media="(min-width: 768px)" srcset="Camille Assets/hero-image-desktop.png">
-                        <img src="Camille Assets/hero-image-mobile.png" alt="Camille Prado Digital Creatives" class="hero-image">
+                        <img src="Camille Assets/hero-image-mobile.png" alt="Camille Prado Digital Creatives" class="hero-image-mobile">
+                    </picture>
+                    
+                        <img src="Camille Assets/hero-image-desktop.png" alt="Camille Prado Digital Creatives" class="hero-image-desktop">
                     </picture>
                 </div>
                 <div class="hero-content">
                     <p class="eyebrow">Creative Portfolio</p>
-                    <h1>A Collection Of Thoughtful Design Work For Brands And Digital Experiences.</h1>
+                    <h1 class="hero-header">A Collection Of Thoughtful Design Work For Brands And Digital Experiences.</h1>
                     <p class="lead">Camille helps brands turn their visual presence into a smoother customer experience through intentional websites, branding, social media graphics, and print materials designed to build trust and move people toward action.</p>
-                    <a href="#contact" class="btn btn-navy">Work With Me</a>
+                    <a href="#contact" class="btn btn-navy btn-hero">Work With Me</a>
                 </div>
             </div>
         </section>
@@ -77,8 +80,8 @@
             <div class="websites-grid">
                 <img src="Camille Assets/food-supplement.jpg" alt="Food supplement website design">
                 <img src="Camille Assets/skin-beauty.jpg" alt="Skin and beauty brand website design">
-                <img src="Camille Assets/food-delivery.jpg" alt="Food delivery services website design">
-                <img src="Camille Assets/product-subs.jpg" alt="Product subscription website design">
+                <img src="Camille Assets/food-delivery.jpg" alt="Food delivery services website design" class="websites-extra">
+                <img src="Camille Assets/product-subs.jpg" alt="Product subscription website design" class="websites-extra">
             </div>
             <a href="#contact" class="btn btn-navy btn-block">Work With Me</a>
         </section>
@@ -110,19 +113,23 @@
         </section>
 
         <section class="feature feature-events">
-            <div class="feature-media">
-                <img src="Camille Assets/mage-events.jpg" alt="Event branding and wedding invitation designs">
+            <div class="feature-media events-media">
+                <img src="Camille Assets/events-featured.png" alt="Featured social media and event graphics" class="events-bg">
+                <img src="Camille Assets/events-wedding-1.jpg" alt="Wedding invitation mockup" class="events-card events-card-1">
+                <img src="Camille Assets/events-wedding-2.jpg" alt="Wedding photo collage mockup" class="events-card events-card-2">
             </div>
             <div class="feature-content">
                 <p class="eyebrow">Event Branding &amp; Graphics</p>
                 <h2>Visuals For The Moments People Remember.</h2>
-                <p>A collection of designs, videos, and creative assets made for weddings and events. Camille combines design and storytelling to capture emotions, branding, and meaningful invitations.</p>
+                <p>A collection of designs, videos, and creative assets made for celebrations, brands, and meaningful milestones. From weddings and birthdays to launches, campaigns, and special events, Camille helps turn personal stories and business moments into polished visuals that feel intentional, memorable, and lasting.</p>
+                <a href="#contact" class="btn btn-navy">Explore The Collection</a>
             </div>
         </section>
 
         <section class="about">
             <div class="about-media">
                 <img src="Camille Assets/about-image.png" alt="Camille Prado, designer">
+                <img src="Camille Assets/badge-about.png" alt="About the designer" class="about-badge">
             </div>
             <div class="about-content">
                 <p class="eyebrow">About</p>
@@ -180,6 +187,8 @@
         </footer>
 
     </main>
+
+    </div>
 
 <script src="script.js" defer></script>
 </body>
