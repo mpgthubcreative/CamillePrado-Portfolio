@@ -335,7 +335,7 @@ a {
 
 .feature-badge {
     position: absolute;
-    bottom: -2.6rem;
+    bottom: -5.6rem;
     right: 1.5rem;
     width: 110px;
     z-index: 2;
@@ -358,8 +358,8 @@ a {
 
 .feature-badge.logo-badge {
     position: absolute;
-    bottom: -4.6rem;
-    right: 1.5rem;
+    bottom: -1.6rem;
+    right: 3.5rem;
     width: 110px;
     z-index: 2;
 }
