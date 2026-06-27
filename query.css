@@ -358,7 +358,7 @@
         .footer-contacts {
             display: flex;
             justify-content: center;
-            gap: 2.5rem;
+            gap: 0rem;
         }
 
         .site-footer .btn {
