@@ -118,9 +118,6 @@ a {
     margin-bottom: 1.5rem;
 }
 
-.eyebrow-light {
-    color: var(--white);
-}
 
 
 .hero-header {
@@ -245,7 +242,7 @@ a {
 }
 
 .project-content {
-    padding: 0 var(--pad-x);
+    padding: 4rem var(--pad-x);
 }
 
 
@@ -318,6 +315,20 @@ a {
     position: relative;
 }
 
+.eyebrow-light {
+    color: var(--white);
+}
+
+.btn.btn-white.btn-hero {
+    font-size: 1.5rem;
+    width: 100%;
+    padding: 1.8rem 2.4rem;
+    font-weight: 500;
+    letter-spacing: 2.25px;
+    line-height: 1;
+}
+
+
 .feature-media > img:first-child {
     width: 100%;
 }
@@ -334,36 +345,31 @@ a {
     padding: 4rem var(--pad-x) 3rem;
 }
 
-.feature-content h2 {
-    font-size: 1.6rem;
-    margin-bottom: 1rem;
-}
-
-.feature-content p {
-    font-size: 0.93rem;
-    margin-bottom: 1.6rem;
-}
-
 .feature-graphic {
     background: var(--navy-mid);
     color: var(--white);
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
-.feature-graphic .feature-content h2 {
-    color: var(--white);
+.feature-logo{
+    padding: 3.5rem 2.5rem;
 }
 
-.feature-graphic .feature-content p {
-    color: rgba(255, 255, 255, 0.92);
+.feature-badge.logo-badge {
+    position: absolute;
+    bottom: -4.6rem;
+    right: 1.5rem;
+    width: 110px;
+    z-index: 2;
 }
 
-.feature-logo {
-    background: var(--white);
+.feature-content.logo-content {
+    padding: 4rem 0rem 0rem 0rem;
 }
 
-.feature-logo .feature-content {
-    padding-top: 4.5rem;
-}
+
+
 
 .feature-events {
     background: var(--white);
@@ -373,6 +379,8 @@ a {
 .feature-events .feature-content {
     padding-top: 2.5rem;
 }
+
+
 
 .events-media {
     position: relative;
@@ -423,7 +431,6 @@ a {
     width: 100%;
     border-radius: 4px;
     margin-bottom: 2rem;
-    box-shadow: 0 16px 36px rgba(31, 58, 92, 0.1);
 }
 
 .about-badge {
@@ -439,22 +446,19 @@ a {
     z-index: 2;
 }
 
-.about-content h2 {
-    font-size: 1.7rem;
-    margin-bottom: 1rem;
-}
-
-.about-content p {
-    font-size: 0.93rem;
-    margin-bottom: 1rem;
-}
 
 /* ---------- Testimonials ---------- */
 
 .testimonials {
-    background: var(--gray-bg);
+    /* background: #F6F6F6; */
     padding: 3.5rem var(--pad-x);
     text-align: center;
+}
+
+.testimonial-container{
+    width: 348px;
+    height: 384px;
+    padding: 2.4rem .5rem;
 }
 
 .testimonials .section-title {
@@ -475,30 +479,35 @@ a {
 }
 
 .testimonial-avatar {
-    width: 64px;
-    height: 64px;
+    width: 118px;
+    height: 118px;
     object-fit: cover;
     border-radius: 50%;
-    margin: -3.6rem auto 1.2rem;
+    margin: -7.6rem auto 1.2rem;
     border: 4px solid var(--white);
     box-shadow: 0 6px 16px rgba(31, 58, 92, 0.15);
+
 }
 
 .stars {
     color: var(--gold);
     letter-spacing: 0.2em;
     margin-bottom: 0.9rem;
-    font-size: 0.95rem;
+    font-size: 3.5rem;
 }
 
 .testimonial h3 {
-    font-size: 1.3rem;
+    font-size: 2.4rem;
     margin-bottom: 0.8rem;
+    color: #000;
 }
 
 .testimonial p {
-    font-size: 0.88rem;
+    font-size: 1.3rem;
     margin-bottom: 1.1rem;
+    color: #000;
+    letter-spacing: .7px;
+    line-height: 2.0;
 }
 
 .testimonial-name {
@@ -506,7 +515,7 @@ a {
     letter-spacing: 0.1em;
     font-size: 0.78rem;
     font-weight: 700;
-    color: var(--navy);
+    margin: 2rem 0 0 0;
 }
 
 /* ---------- Footer ---------- */
@@ -520,14 +529,19 @@ a {
 
 .site-footer h2 {
     color: var(--white);
-    font-size: 1.9rem;
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-weight: 400;
+    font-size: 3.5rem;
     margin-bottom: 0.8rem;
 }
 
 .site-footer > p {
-    font-size: 0.95rem;
+    font-size: 1.5rem;
     color: rgba(255, 255, 255, 0.85);
     margin-bottom: 1.8rem;
+    width: 24.9rem;
+    margin: 0  auto 2rem  auto;
 }
 
 .contact-row {
@@ -537,7 +551,8 @@ a {
     gap: 0.8rem;
     text-decoration: none;
     color: var(--white);
-    font-size: 0.92rem;
+    font-size: 1.5rem;
+    font-weight: 600;
     margin-bottom: 1.2rem;
 }
 

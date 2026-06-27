@@ -80,7 +80,7 @@
         width: 12rem;
         padding: 1rem .5rem;
         font-weight: 400;
-        letter-spacing: 1.6px;
+        letter-spacing: 1px;
         line-height: 1;
     }
 
@@ -92,25 +92,26 @@
 
         .section-title {
             font-size: 2.4rem;
-            margin-bottom: 2.2rem;
+            margin-bottom: 1rem;
         }
 
         .second{
             order: 2;
         }
 
-        .eyebrowproject{
+        .eyebrowproject , .eyebrow-light{
             font-size: .7rem;
             font-weight: 900;
             margin-bottom: 1rem;
         }
 
-        .section-title.left{
+        .section-title.left , .section-title.left.eyebrow-light{
             font-size: 1.8rem;
             line-height: 1.2;
+            margin-bottom: 1rem;
         }
 
-        .note{
+        .note , .note.eyebrow-light {
             font-size: .6rem;
             line-height: 1.5;
             margin-bottom: 1rem;
@@ -141,7 +142,7 @@
             padding: 0;
         
         }
-        .project-content{
+        .project-content , .logo-content, .feature-content , .about-content{
             width: 253.5px;
             margin-bottom: 0;
             padding: 0;
@@ -197,76 +198,96 @@
         }
 
         /* ---- Feature sections: side-by-side ---- */
+
+
         .feature-graphic,
-        .feature-logo,
         .feature-events {
-            display: flex;
+            display: grid;
+            grid-template-columns: 1.8fr 1.2fr;
+            gap: 0rem;
             align-items: center;
-            max-width: var(--container);
-            margin: 0 auto;
-            gap: 3.5rem;
         }
 
-        .feature-media,
-        .feature-content {
-            flex: 1 1 50%;
+        .feature-media > img:first-child {
+        width: 388px;
         }
 
-        .feature-logo {
-            flex-direction: row-reverse;
-        }
-
-        .feature-content {
-            padding: 2.5rem 0;
-        }
-
-        .feature-logo .feature-content {
-            padding-top: 2.5rem;
-        }
-
-        .feature-events .feature-content {
-            padding-top: 2.5rem;
-        }
-
-        .feature-content h2 {
-            font-size: 2rem;
-        }
-
-        .feature-content p {
-            font-size: 0.98rem;
-            max-width: 440px;
-        }
+        .btn.btn-white.btn-hero {
+        font-size: .6rem;
+        width: 12rem;
+        padding: 1rem .5rem;
+        font-weight: 400;
+        letter-spacing: 1px;
+        line-height: 1;
+          }
 
         .feature-badge {
-            right: -1.5rem;
+        position: absolute;
+        bottom: 1rem;
+        left: 65rem;
+        width: 60px;
+        z-index: 2;
+          }
+
+
+        .feature-logo{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0rem;
+            align-items: center;
+            justify-self: center;   
+
         }
+
+       .logo-media{
+        order: 2;
+        width: 288px;
+        
+    
+       }
+
+        .feature-badge.logo-badge {
+        position: absolute;
+        bottom: 0rem;
+        left: -10rem;
+        width: 60px;
+        z-index: 2;
+          }
+
+          .feature-content.logo-content {
+            padding: 0rem;
+          }
 
         /* ---- About: two columns ---- */
         .about {
-            max-width: var(--container);
             margin: 0 auto;
-            padding: 5rem 2.5rem;
+            padding: 3.5rem 2.5rem;
             display: flex;
             align-items: center;
+            justify-content: center;
             gap: 4rem;
         }
 
-        .about-media,
-        .about-content {
-            flex: 1 1 50%;
+
+        .about-media{
+            order: 2;
+            width: 345px;
+         
         }
 
         .about-media img {
-            margin-bottom: 0;
+            margin-bottom: 0rem;
         }
 
-        .about-content h2 {
-            font-size: 2.1rem;
+        .about-badge {
+            position: absolute;
+            top: 2.5rem;
+            right: -3.5rem;
+            width: 60px;
+            z-index: 2;
         }
 
-        .about-content p {
-            font-size: 0.98rem;
-        }
+
 
         /* ---- Testimonials: three columns ---- */
         .testimonials {
@@ -374,12 +395,12 @@
         margin-bottom: 1rem;
     }
 
-    .btn.btn-navy.btn-hero {
+    .btn.btn-navy.btn-hero, .btn.btn-white.btn-hero {
         font-size: .8rem;
         width: 15rem;
         padding: 1rem .5rem;
         font-weight: 400;
-        letter-spacing: 1.6px;
+        letter-spacing: 1px;
         line-height: 1;
     }
 
@@ -396,18 +417,18 @@
             order: 2;
         }
 
-        .eyebrowproject{
+        .eyebrowproject, .eyebrow-light{
             font-size: .8rem;
             font-weight: 900;
             margin-bottom: 1.2rem;
         }
 
-        .section-title.left{
+        .section-title.left , .section-title.left.eyebrow-light{
             font-size: 2.4rem;
             line-height: 1.2;
         }
 
-        .note{
+        .note , .note.eyebrow-light { 
             font-size: .8rem;
             line-height: 1.5;
             margin-bottom: 1.2rem;
@@ -438,7 +459,7 @@
             padding: 0;
         
         }
-        .project-content{
+        .project-content , .logo-content , .feature-content , .about-content{
             width: 338px;
             margin-bottom: 0;
             padding: 0;
@@ -448,18 +469,71 @@
             width: 311px;
         }
 
-
-
-
-
-
-        .feature-content h2 {
-            font-size: 2.2rem;
+        
+        .feature-media > img:first-child {
+        width: 512px;
         }
 
-        .about-content h2 {
-            font-size: 2.3rem;
+           .feature-badge {
+        position: absolute;
+        bottom: 2rem;
+        left: 85rem;
+        width: 81px;
+        z-index: 2;
+          }
+
+
+        
+        .feature-logo{
+            align-items: center;
+            justify-self: center;   
+
         }
+
+       .logo-media{
+        order: 2;
+        width: 384px;
+        
+    
+       }
+
+        .feature-badge.logo-badge {
+        position: absolute;
+        bottom: 0rem;
+        left: -14rem;
+        width: 81px;
+        z-index: 2;
+          }
+
+        .feature-content.logo-content {
+            padding: 0rem;
+          }
+
+
+         .about-media{
+            order: 2;
+            width: 460px;
+            
+        }
+
+        
+        .about-badge {
+            position: absolute;
+            top: 4rem;
+            right: -3.5rem;
+            width: 81px;
+            z-index: 2;
+        }
+
+
+
+
+
+
+
+
+
+
 
         .site-footer h2 {
             font-size: 2.4rem;
@@ -530,12 +604,12 @@
         margin-bottom: 1rem;
     }
 
-    .btn.btn-navy.btn-hero {
+    .btn.btn-navy.btn-hero, .btn.btn-white.btn-hero {
         font-size: .93rem;
         width: 15rem;
         padding: 1rem .5rem;
         font-weight: 400;
-        letter-spacing: 1.6px;
+        letter-spacing: 1px;
         line-height: 1;
     }
 
@@ -552,19 +626,19 @@
             order: 2;
         }
 
-        .eyebrowproject{
+        .eyebrowproject, .eyebrow-light{
             font-size: .9rem;
             font-weight: 900;
             margin-bottom: 1.4rem;
         }
 
-        .section-title.left{
+        .section-title.left, .section-title.left.eyebrow-light{
             font-size: 2.8rem;
             line-height: 1.2;
             margin-bottom: 1.4rem;
         }
 
-        .note{
+        .note , .note.eyebrow-light {
             font-size: .9rem;
             line-height: 1.5;
             margin-bottom: 1.4rem;
@@ -595,7 +669,7 @@
             padding: 0;
         
         }
-        .project-content{
+        .project-content , .logo-content .feature-content, .about-content{
             width: 396px;
             margin-bottom: 0;
             padding: 0;
@@ -605,8 +679,66 @@
             width: 354px;
         }
 
-    }
+          .feature-media > img:first-child {
+        width: 600px;
+        }
 
+        .feature-badge {
+        position: absolute;
+        bottom: 2.5rem;
+        left: 98rem;
+        width: 95px;
+        z-index: 2;
+          }
+
+        
+        
+        .feature-logo{
+        align-items: center;
+        justify-self: center;   
+
+        }
+
+       .logo-media{
+        order: 2;
+        width: 450px;
+        
+    
+       }
+
+        .feature-badge.logo-badge {
+        position: absolute;
+        bottom: 1rem;
+        left: -18rem;
+        width: 95px;
+        z-index: 2;
+          }
+
+        .feature-content.logo-content {
+            padding: 0rem;
+          }
+
+
+            .about-media{
+            width: 539px;
+            
+        }
+
+        
+        .about-badge {
+            position: absolute;
+            top: 4rem;
+            right: -3.5rem;
+            width: 95px;
+            z-index: 2;
+        }
+
+
+
+
+
+
+    }
 
 
 
@@ -677,7 +809,7 @@
         margin-bottom: 1rem;
     }
 
-    .btn.btn-navy.btn-hero {
+    .btn.btn-navy.btn-hero, .btn.btn-white.btn-hero {
         font-size: 1.2rem;
         width: 22rem;
         padding: 1.2rem 1.5rem;
@@ -700,18 +832,19 @@
             order: 2;
         }
 
-        .eyebrowproject{
+        .eyebrowproject , .eyebrow-light{
             font-size: 1rem;
             font-weight: 900;
             margin-bottom: 1.6rem;
         }
 
-        .section-title.left{
+        .section-title.left, .section-title.left.eyebrow-light{
             font-size: 3.37rem;
             line-height: 1.2;
+            margin-bottom: 1.6rem;
         }
 
-        .note{
+        .note, .note.eyebrow-light{
             font-size: 1.1rem;
             line-height: 1.5;
             margin-bottom: 1.6rem;
@@ -742,7 +875,7 @@
             padding: 0;
         
         }
-        .project-content{
+        .project-content, .logo-content, .feature-content , .about-content{
             width: 475px;
             margin-bottom: 0;
             padding: 0;
@@ -752,16 +885,56 @@
             width: 437px;
         }
 
-        .feature-content h2 {
-            font-size: 2.4rem;
+         .feature-media > img:first-child {
+        width: 720px;
         }
 
-        .feature-content p {
-            max-width: 480px;
+        .feature-badge {
+        position: absolute;
+        bottom: 2.5rem;
+        left: 120rem;
+        width: 114px;
+        z-index: 2;
+          }
+
+          
+        .feature-logo{
+        align-items: center;
+        justify-self: center;   
+
         }
 
-        .about-content h2 {
-            font-size: 2.5rem;
+       .logo-media{
+        order: 2;
+        width: 540px;
+        
+    
+       }
+
+        .feature-badge.logo-badge {
+        position: absolute;
+        bottom: 1rem;
+        left: -20rem;
+        width: 114px;
+        z-index: 2;
+          }
+
+        .feature-content.logo-content {
+            padding: 0rem;
+          }
+
+            .about-media{
+            width: 647px;
+            
+        }
+
+
+        .about-badge {
+            position: absolute;
+            top: 4rem;
+            right: -3.5rem;
+            width: 114px;
+            z-index: 2;
         }
 
         .testimonial h3 {
@@ -835,12 +1008,12 @@
         margin-bottom: 1.8rem;
     }
 
-    .btn.btn-navy.btn-hero {
+    .btn.btn-navy.btn-hero , .btn.btn-white.btn-hero {
         font-size: 1.5rem;
         width: 25rem;
         padding: 1.5rem 1.7rem;
         font-weight: 400;
-        letter-spacing: 1.6px;
+        letter-spacing: 1px;
         line-height: 1;
     }
 
@@ -857,18 +1030,19 @@
             order: 2;
         }
 
-        .eyebrowproject{
+        .eyebrowproject, .eyebrow-light{
             font-size: 1.1rem;
             font-weight: 900;
             margin-bottom: 1.8rem;
         }
 
-        .section-title.left{
+        .section-title.left, .section-title.left.eyebrow-light {
             font-size: 4.5rem;
             line-height: 1.2;
+            margin-bottom: 1.8rem;
         }
 
-        .note{
+        .note , .note.eyebrow-light {
             font-size: 1.5rem;
             line-height: 1.5;
             margin-bottom: 1.8rem;
@@ -899,7 +1073,7 @@
             padding: 0;
         
         }
-        .project-content{
+        .project-content, .logo-content , .feature-content , .about-content{
             width: 634px;
             margin-bottom: 0;
             padding: 0;
@@ -908,7 +1082,65 @@
         .note, .project-note {
             width: 583px;
         }
+
         
+         .feature-media > img:first-child {
+        width: 960px;
+        }
+
+         .feature-badge {
+        position: absolute;
+        bottom: 5.5rem;
+        left: 160rem;
+        width: 152px;
+        z-index: 2;
+          }
+
+              
+        .feature-logo{
+        align-items: center;
+        justify-self: center;   
+
+        }
+
+       .logo-media{
+        order: 2;
+        width: 720px;
+        
+    
+       }
+
+        .feature-badge.logo-badge {
+        position: absolute;
+        bottom: 2rem;
+        left: -26rem;
+        width: 152px;
+        z-index: 2;
+          }
+
+        .feature-content.logo-content {
+            padding: 0rem;
+          }
+
+           .about-media{
+            width: 720px;
+            
+        }
+
+        
+        .about-badge {
+            position: absolute;
+            top: 4rem;
+            right: -3.5rem;
+            width: 152px;
+            z-index: 2;
+        }
+        
+       
+
+
+
+
 
         .site-footer h2 {
             font-size: 2.7rem;
