@@ -289,9 +289,10 @@ a {
 .websites-grid img {
     flex: 0 0 72%;
     width: 72%;
-    border-radius: 4px;
+    border-radius: 20px;
     box-shadow: 0 10px 24px rgba(31, 58, 92, 0.1);
     scroll-snap-align: start;
+    padding: 2rem;
 }
 
 .websites-grid .websites-extra {
