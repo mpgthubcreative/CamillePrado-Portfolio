@@ -366,7 +366,7 @@
             width: auto;
             padding: 1rem 3rem;
         }
-    }
+    
 
     /* ---- Wider desktops: scale spacing & type a little further ---- */
     @media (min-width: 1024px) {
