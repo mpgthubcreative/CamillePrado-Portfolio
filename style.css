@@ -85,10 +85,7 @@ a {
     width: 100%;
 }
 
-.section-title {
-    text-align: center;
-    font-size: 1.6rem;
-}
+
 
 /* ---------- Header ---------- */
 
@@ -167,13 +164,13 @@ a {
 .hero-image-mobile {
     width: 100%;
     border-radius: 4px;
-    box-shadow: 0 20px 40px rgba(31, 58, 92, 0.18);
+    /* box-shadow: 0 20px 40px rgba(31, 58, 92, 0.18); */
 }
 
 .hero-image-desktop {
     width: 100%;
     border-radius: 4px;
-    box-shadow: 0 20px 40px rgba(31, 58, 92, 0.18);
+    /* box-shadow: 0 20px 40px rgba(31, 58, 92, 0.18); */
     display: none;
 }
 
@@ -185,15 +182,48 @@ a {
 /* ---------- Projects intro ---------- */
 
 .projects-intro {
-    background: var(--cream);
     padding: 3rem var(--pad-x) 2.5rem;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 3.5rem;
+    color: #213D5E;
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-weight: 600;
+    line-height: 1.14;
 }
 
 /* ---------- Project cards ---------- */
 
 .project {
-    background: var(--cream);
     padding-bottom: 3.5rem;
+}
+
+.eyebrowproject{
+    font-family: var(--font-sans);
+    text-transform: uppercase;
+    letter-spacing: 2.25px;
+    line-height: 1;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--navy);
+    margin-bottom: 1.5rem;
+}
+
+.left{
+    text-align: left;
+    margin-bottom: 1.6rem;
+}
+
+.note{
+    font-family: var(--font-sans);
+    font-size: 1.5rem;
+    color: var(--navy);
+    margin-bottom: 1.6rem;
+    font-weight: 500;
+    line-height: 1.66;
 }
 
 .project-media {
@@ -218,49 +248,69 @@ a {
     padding: 0 var(--pad-x);
 }
 
-.project-content h3 {
-    font-size: 1.45rem;
-    margin-bottom: 1rem;
-}
-
-.project-content p {
-    font-size: 0.92rem;
-    margin-bottom: 1rem;
-}
 
 .project-note {
-    font-size: 0.82rem;
-    font-style: italic;
+    font-size: 1.5rem;
+    line-height: 1.66;
+    color: var(--navy);
 }
 
 .project-content .btn {
-    margin-top: 0.6rem;
+    margin-top: 1.6rem;
+    font-size: 1.5rem;
+    width: 100%;
+    padding: 1.8rem 2.4rem;
+    font-weight: 500;
+    letter-spacing: 2.25px;
+    line-height: 1;
 }
 
 /* ---------- Websites grid ---------- */
 
 .websites {
-    background: var(--gray-bg);
+
     padding: 3rem var(--pad-x);
     text-align: center;
 }
 
 .websites-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 0.8rem;
-    margin: 2rem 0;
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    gap: 1rem;
+    margin: 2rem -2.5rem;
+    padding: 0 2.5rem 1rem;
+    scrollbar-width: none;
+}
+
+.websites-grid::-webkit-scrollbar {
+    display: none;
 }
 
 .websites-grid img {
-    width: 100%;
+    flex: 0 0 72%;
+    width: 72%;
     border-radius: 4px;
     box-shadow: 0 10px 24px rgba(31, 58, 92, 0.1);
+    scroll-snap-align: start;
 }
 
 .websites-grid .websites-extra {
-    display: none;
+    display: block;
 }
+
+.project-content .btn {
+    margin-top: 1.6rem;
+    font-size: 1.5rem;
+    width: 100%;
+    padding: 1.8rem 2.4rem;
+    font-weight: 500;
+    letter-spacing: 2.25px;
+    line-height: 1;
+}
+
 
 /* ---------- Feature sections (graphic / logo / events) ---------- */
 

@@ -2,613 +2,915 @@
    Responsive scaling: 768px (tablet layout reference) up to 1920px
    ========================================================= */
 
-@media (min-width: 768px) {
+    @media (min-width: 768px) {
 
 
-    .container{
-        width: 768px;
-        margin: 0 auto;
+        .container{
+            width: 768px;
+            margin: 0 auto;
+        }
+
+        .site-header .logo {
+            width: 156px;
+        }
+
+        /* ---- Hero becomes a two-column row ---- */
+        .hero-inner {
+            display: flex;
+            align-items: center;
+            gap: 3.5rem;
+            max-width: var(--container);
+            margin: 0 auto;
+            padding: 5rem 10rem 5rem 10rem;
+        }
+
+        .hero-media,
+        .hero-content {
+            flex: 1 1 50%;
+            padding: 0;
+        }
+    .hero-image-mobile {
+        width: 100%;
+        border-radius: 4px;
+        display: none;
     }
 
-    .site-header .logo {
-        width: 156px;
-    }
-
-    /* ---- Hero becomes a two-column row ---- */
-    .hero-inner {
-        display: flex;
-        align-items: center;
-        gap: 3.5rem;
-        max-width: var(--container);
-        margin: 0 auto;
-        padding: 5rem 10rem 5rem 10rem;
-    }
-
-    .hero-media,
-    .hero-content {
-        flex: 1 1 50%;
-        padding: 0;
-    }
-.hero-image-mobile {
-    width: 100%;
-    border-radius: 4px;
-    box-shadow: 0 20px 40px rgba(31, 58, 92, 0.18);
-    display: none;
-}
-
-.hero-image-desktop {
-    width: 100%;
-    border-radius: 4px;
-    box-shadow: 0 20px 40px rgba(31, 58, 92, 0.18);
-    display: block;
-}
-
-.hero-badge {
-    position: absolute;
-    top: 1rem;
-    left: -2.5rem;
-    width: 60px;
-    z-index: 2;
-}
-
-    .hero-content {
-        order: -1;
-    }
-
-
-    .hero-content{
-        font-size: 1rem;
-        max-width: 232px;
-    }
-
-    .eyebrow {
-    font-size: .72rem;
-    font-weight: 500;
-      margin-bottom: 1.2rem;
-}
-
-.hero-header {
-    font-size: 2.2rem;
-     margin-bottom: 1.2rem;
-}
-
-.lead {
-    font-size: .6rem;
-    margin-bottom: 1rem;
-}
-
-.btn.btn-navy.btn-hero {
-    font-size: .6rem;
-    width: 12rem;
-    padding: 1rem .5rem;
-    font-weight: 400;
-    letter-spacing: 1.6px;
-    line-height: 1;
-}
-
-
-    /* ---- Projects intro ---- */
-    .projects-intro {
-        padding: 4rem 2.5rem 3rem;
-    }
-
-    .section-title {
-        font-size: 2rem;
-    }
-
-    /* ---- Project cards: alternating two-column rows ---- */
-    .project {
-        max-width: var(--container);
-        margin: 0 auto;
-        padding: 0 2.5rem 4.5rem;
-        display: flex;
-        align-items: center;
-        gap: 4rem;
-    }
-
-    .project-media,
-    .project-content {
-        flex: 1 1 50%;
-        margin-bottom: 0;
-        padding: 0;
-    }
-
-    .project:nth-of-type(2) {
-        flex-direction: row-reverse;
-    }
-
-    .project-content h3 {
-        font-size: 1.7rem;
-    }
-
-    .project-content p {
-        font-size: 0.96rem;
-    }
-
-    .project-content .btn-block {
-        display: inline-block;
-        width: auto;
-    }
-
-    /* ---- Websites grid: single row of four ---- */
-    .websites {
-        padding: 4.5rem 2.5rem;
-    }
-
-    .websites .section-title,
-    .websites .btn {
-        max-width: var(--container);
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .websites .btn {
-        display: inline-block;
-        width: auto;
-    }
-
-    .websites-grid {
-        grid-template-columns: repeat(4, 1fr);
-        gap: 1.5rem;
-        max-width: var(--container);
-        margin: 2.5rem auto;
-    }
-
-    .websites-grid .websites-extra {
+    .hero-image-desktop {
+        width: 100%;
+        border-radius: 4px;
         display: block;
     }
 
-    /* ---- Feature sections: side-by-side ---- */
-    .feature-graphic,
-    .feature-logo,
-    .feature-events {
-        display: flex;
-        align-items: center;
-        max-width: var(--container);
-        margin: 0 auto;
-        gap: 3.5rem;
+    .hero-badge {
+        position: absolute;
+        top: 1rem;
+        left: -2.5rem;
+        width: 60px;
+        z-index: 2;
     }
 
-    .feature-media,
-    .feature-content {
-        flex: 1 1 50%;
+        .hero-content {
+            order: -1;
+        }
+
+
+        .hero-content{
+            font-size: 1rem;
+            max-width: 232px;
+        }
+
+        .eyebrow {
+        font-size: .72rem;
+        font-weight: 500;
+        margin-bottom: 1.2rem;
     }
 
-    .feature-logo {
-        flex-direction: row-reverse;
-    }
-
-    .feature-content {
-        padding: 2.5rem 0;
-    }
-
-    .feature-logo .feature-content {
-        padding-top: 2.5rem;
-    }
-
-    .feature-events .feature-content {
-        padding-top: 2.5rem;
-    }
-
-    .feature-content h2 {
-        font-size: 2rem;
-    }
-
-    .feature-content p {
-        font-size: 0.98rem;
-        max-width: 440px;
-    }
-
-    .feature-badge {
-        right: -1.5rem;
-    }
-
-    /* ---- About: two columns ---- */
-    .about {
-        max-width: var(--container);
-        margin: 0 auto;
-        padding: 5rem 2.5rem;
-        display: flex;
-        align-items: center;
-        gap: 4rem;
-    }
-
-    .about-media,
-    .about-content {
-        flex: 1 1 50%;
-    }
-
-    .about-media img {
-        margin-bottom: 0;
-    }
-
-    .about-content h2 {
-        font-size: 2.1rem;
-    }
-
-    .about-content p {
-        font-size: 0.98rem;
-    }
-
-    /* ---- Testimonials: three columns ---- */
-    .testimonials {
-        padding: 5rem 2.5rem;
-    }
-
-    .testimonials-grid {
-        grid-template-columns: repeat(3, 1fr);
-        max-width: var(--container);
-        margin: 0 auto;
-        gap: 2rem;
-    }
-
-    /* ---- Footer ---- */
-    .site-footer {
-        padding: 5rem 2.5rem;
-    }
-
-    .site-footer h2 {
+    .hero-header {
         font-size: 2.2rem;
+        margin-bottom: 1.2rem;
     }
 
-    .footer-contacts {
-        display: flex;
-        justify-content: center;
-        gap: 2.5rem;
+    .lead {
+        font-size: .6rem;
+        margin-bottom: 1rem;
     }
 
-    .site-footer .btn {
-        display: inline-block;
-        width: auto;
-        padding: 1rem 3rem;
-    }
-}
-
-/* ---- Wider desktops: scale spacing & type a little further ---- */
-@media (min-width: 1024px) {
-  
-    .container{
-        width: 1024px;
-        margin: 0 auto;
-    }
-    
-
-     .site-header .logo {
-        width: 208px;
-    }
-  .hero-inner {
-        display: flex;
-        align-items: center;
-        gap: 4.5rem;
-        max-width: var(--container);
-        margin: 0 auto;
-        padding: 8rem 13rem 8rem 13rem;
-    }
-
-    .hero-media,
-    .hero-content {
-        flex: 1 1 50%;
-        padding: 0;
-    }
-.hero-image-mobile {
-    width: 100%;
-    border-radius: 4px;
-    box-shadow: 0 20px 40px rgba(31, 58, 92, 0.18);
-    display: none;
-}
-
-.hero-image-desktop {
-    width: 100%;
-    border-radius: 4px;
-    box-shadow: 0 20px 40px rgba(31, 58, 92, 0.18);
-    display: block;
-}
-
-.hero-badge {
-    position: absolute;
-    top: 1.5rem;
-    left: -rem;
-    width: 81px;
-    z-index: 2;
-}
-
-    .hero-content {
-        order: -1;
+    .btn.btn-navy.btn-hero {
+        font-size: .6rem;
+        width: 12rem;
+        padding: 1rem .5rem;
+        font-weight: 400;
+        letter-spacing: 1.6px;
+        line-height: 1;
     }
 
 
-    .hero-content{
-        font-size: 1rem;
-        max-width: 309px;
-    }
+        /* ---- Projects intro ---- */
+        .projects-intro {
+            padding: 4rem 2.5rem 0rem 3rem;
+        }
 
-    .eyebrow {
-    font-size: .96rem;
-    font-weight: 500;
-      margin-bottom: 1.2rem;
-}
+        .section-title {
+            font-size: 2.4rem;
+            margin-bottom: 2.2rem;
+        }
 
-.hero-header {
-    font-size: 2.9rem;
-     margin-bottom: 1.2rem;
-}
+        .second{
+            order: 2;
+        }
 
-.lead {
-    font-size: .8rem;
-    margin-bottom: 1rem;
-}
+        .eyebrowproject{
+            font-size: .7rem;
+            font-weight: 900;
+            margin-bottom: 1rem;
+        }
 
-.btn.btn-navy.btn-hero {
-    font-size: .8rem;
-    width: 15rem;
-    padding: 1rem .5rem;
-    font-weight: 400;
-    letter-spacing: 1.6px;
-    line-height: 1;
-}
+        .section-title.left{
+            font-size: 1.8rem;
+            line-height: 1.2;
+        }
 
-    .feature-content h2 {
-        font-size: 2.2rem;
-    }
+        .note{
+            font-size: .6rem;
+            line-height: 1.5;
+            margin-bottom: 1rem;
+        }
 
-    .about-content h2 {
-        font-size: 2.3rem;
-    }
-
-    .site-footer h2 {
-        font-size: 2.4rem;
-    }
-}
-
-@media (min-width: 1200px) {
-   
-    .container{
-        width: 1200px;
-        margin: 0 auto;
-    }
-    
-
-      .site-header .logo {
-        width: 244px;
-    }
-
-  .hero-inner {
-        display: flex;
-        align-items: center;
-        gap: 7.5rem;
-        max-width: var(--container);
-        margin: 0 auto;
-        padding: 9rem 15rem 9rem 15rem;
-    }
-
-    .hero-media,
-    .hero-content {
-        flex: 1 1 50%;
-        padding: 0;
-    }
-
-.hero-badge {
-    position: absolute;
-    top: 2rem;
-    left: -3.5rem;
-    width: 95px;
-    z-index: 2;
-}
-
-    .hero-content {
-        order: -1;
-    }
+        .project-note {
+            font-size: .6rem;
+            line-height: 1.5;
+            margin-bottom: 0rem;
+        }
 
     
 
+        /* ---- Project cards: alternating two-column rows ---- */
+        .project {
+            max-width: var(--container);
+            margin: 0 auto;
+            padding: 0 2.5rem 4.5rem;
+            display: flex;
+            align-items: center;
+            gap: 4rem;
+            justify-content: center;
+        }
 
-    .hero-content{
-        font-size: 1rem;
-        max-width: 363px;
-        padding-left: 3rem;
+        .project-media {
+            width: 288px;
+            margin-bottom: 0;
+            padding: 0;
+        
+        }
+        .project-content{
+            width: 253.5px;
+            margin-bottom: 0;
+            padding: 0;
+        }
+
+        .note, .project-note {
+            width: 233px;
+        }
+
+        .project:nth-of-type(2) {
+            flex-direction: row-reverse;
+        }
+
+        .project-content .btn-block {
+            display: inline-block;
+            width: auto;
+        }
+
+        /* ---- Websites grid: single row of four ---- */
+        .websites {
+            padding: 4.5rem 2.5rem;
+        }
+
+        .websites .section-title,
+        .websites .btn {
+            max-width: var(--container);
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .websites .btn {
+            display: inline-block;
+            width: auto;
+        }
+
+        .websites-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.5rem;
+            max-width: var(--container);
+            margin: 2.5rem auto;
+            padding: 0;
+            overflow-x: visible;
+        }
+
+        .websites-grid img {
+            flex: unset;
+            width: 100%;
+        }
+
+        .websites-grid .websites-extra {
+            display: block;
+        }
+
+        /* ---- Feature sections: side-by-side ---- */
+        .feature-graphic,
+        .feature-logo,
+        .feature-events {
+            display: flex;
+            align-items: center;
+            max-width: var(--container);
+            margin: 0 auto;
+            gap: 3.5rem;
+        }
+
+        .feature-media,
+        .feature-content {
+            flex: 1 1 50%;
+        }
+
+        .feature-logo {
+            flex-direction: row-reverse;
+        }
+
+        .feature-content {
+            padding: 2.5rem 0;
+        }
+
+        .feature-logo .feature-content {
+            padding-top: 2.5rem;
+        }
+
+        .feature-events .feature-content {
+            padding-top: 2.5rem;
+        }
+
+        .feature-content h2 {
+            font-size: 2rem;
+        }
+
+        .feature-content p {
+            font-size: 0.98rem;
+            max-width: 440px;
+        }
+
+        .feature-badge {
+            right: -1.5rem;
+        }
+
+        /* ---- About: two columns ---- */
+        .about {
+            max-width: var(--container);
+            margin: 0 auto;
+            padding: 5rem 2.5rem;
+            display: flex;
+            align-items: center;
+            gap: 4rem;
+        }
+
+        .about-media,
+        .about-content {
+            flex: 1 1 50%;
+        }
+
+        .about-media img {
+            margin-bottom: 0;
+        }
+
+        .about-content h2 {
+            font-size: 2.1rem;
+        }
+
+        .about-content p {
+            font-size: 0.98rem;
+        }
+
+        /* ---- Testimonials: three columns ---- */
+        .testimonials {
+            padding: 5rem 2.5rem;
+        }
+
+        .testimonials-grid {
+            grid-template-columns: repeat(3, 1fr);
+            max-width: var(--container);
+            margin: 0 auto;
+            gap: 2rem;
+        }
+
+        /* ---- Footer ---- */
+        .site-footer {
+            padding: 5rem 2.5rem;
+        }
+
+        .site-footer h2 {
+            font-size: 2.2rem;
+        }
+
+        .footer-contacts {
+            display: flex;
+            justify-content: center;
+            gap: 2.5rem;
+        }
+
+        .site-footer .btn {
+            display: inline-block;
+            width: auto;
+            padding: 1rem 3rem;
+        }
     }
 
-    .eyebrow {
-    font-size: 1.1rem;
-    font-weight: 500;
-      margin-bottom: 1.2rem;
-}
-
-.hero-header {
-    font-size: 3.4rem;
-     margin-bottom: 1.2rem;
-}
-
-.lead {
-    font-size: .93rem;
-    margin-bottom: 1rem;
-}
-
-.btn.btn-navy.btn-hero {
-    font-size: .93rem;
-    width: 15rem;
-    padding: 1rem .5rem;
-    font-weight: 400;
-    letter-spacing: 1.6px;
-    line-height: 1;
-}
-}
-
-
-
-
-@media (min-width: 1440px) {
+    /* ---- Wider desktops: scale spacing & type a little further ---- */
+    @media (min-width: 1024px) {
     
-    .container{
-        width: 1440px;
-        margin: 0 auto;
-    }
-    
-  .site-header .logo {
-        width: 293px;
-    }
+        .container{
+            width: 1024px;
+            margin: 0 auto;
+        }
+        
 
-  .hero-inner {
-        display: flex;
-        align-items: center;
-        gap: 9.5rem;
-        max-width: 1920px;
-        margin: 0 auto;
-        padding: 11rem 18rem 11rem 18rem;
-    }
+        .site-header .logo {
+            width: 208px;
+        }
+    .hero-inner {
+            display: flex;
+            align-items: center;
+            gap: 4.5rem;
+            max-width: var(--container);
+            margin: 0 auto;
+            padding: 8rem 13rem 8rem 13rem;
+        }
 
-    .hero-media,
-    .hero-content {
-        flex: 1 1 50%;
-        padding: 0;
-    }
-
-.hero-image-desktop {
-    width: 100%;
-    border-radius: 4px;
-    box-shadow: 0 20px 40px rgba(31, 58, 92, 0.18);
-    display: block;
-}
-
-.hero-badge {
-    position: absolute;
-    top: 2rem;
-    left: -4.5rem;
-    width: 114px;
-    z-index: 2;
-}
-
-    .hero-content {
-        order: -1;
+        .hero-media,
+        .hero-content {
+            flex: 1 1 50%;
+            padding: 0;
+        }
+    .hero-image-mobile {
+        width: 100%;
+        border-radius: 4px;
+        display: none;
     }
 
-
-    .hero-content{
-        font-size: 1rem;
-        max-width: 435px;
-        padding-left: 0rem;
+    .hero-image-desktop {
+        width: 100%;
+        border-radius: 4px;
+        display: block;
     }
 
-    .eyebrow {
-    font-size: 1.35rem;
-    font-weight: 500;
-      margin-bottom: 1.2rem;
-}
-
-.hero-header {
-    font-size: 4.1rem;
-     margin-bottom: 1.2rem;
-}
-
-.lead {
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
-}
-
-.btn.btn-navy.btn-hero {
-    font-size: 1.2rem;
-    width: 22rem;
-    padding: 1.2rem 1.5rem;
-    font-weight: 400;
-    letter-spacing: 1.6px;
-    line-height: 1;
-}
-
-    .feature-content h2 {
-        font-size: 2.4rem;
+    .hero-badge {
+        position: absolute;
+        top: 1.5rem;
+        left: -rem;
+        width: 81px;
+        z-index: 2;
     }
 
-    .feature-content p {
-        max-width: 480px;
+        .hero-content {
+            order: -1;
+        }
+
+
+        .hero-content{
+            font-size: 1rem;
+            max-width: 309px;
+        }
+
+        .eyebrow {
+        font-size: .96rem;
+        font-weight: 500;
+        margin-bottom: 1.2rem;
     }
 
-    .about-content h2 {
-        font-size: 2.5rem;
+    .hero-header {
+        font-size: 2.9rem;
+        margin-bottom: 1.2rem;
     }
 
-    .testimonial h3 {
-        font-size: 1.45rem;
-    }
-}
-
-@media (min-width: 1920px) {
-     .container{
-        width: 1920px;
-        margin: 0 auto;
-    }
-    
-     .site-header .logo {
-        width: 390px;
+    .lead {
+        font-size: .8rem;
+        margin-bottom: 1rem;
     }
 
-  .hero-inner {
-        display: flex;
-        align-items: center;
-        gap: 11.5rem;
-        max-width: 1920px;
-        margin: 0 auto;
-        padding: 14rem 18rem 14rem 18rem;
+    .btn.btn-navy.btn-hero {
+        font-size: .8rem;
+        width: 15rem;
+        padding: 1rem .5rem;
+        font-weight: 400;
+        letter-spacing: 1.6px;
+        line-height: 1;
     }
 
-    .hero-media,
-    .hero-content {
-        flex: 1 1 50%;
-        padding: 0;
-    }
+        .projects-intro {
+            padding: 4rem 2.5rem 0rem 3rem;
+        }
 
-.hero-image-desktop {
-    width: 100%;
-    border-radius: 4px;
-    box-shadow: 0 20px 40px rgba(31, 58, 92, 0.18);
-    display: block;
-}
+        .section-title {
+            font-size: 3.2rem;
+            margin-bottom: 2.4rem;
+        }
 
-.hero-badge {
-    position: absolute;
-    top: 3rem;
-    left: -6rem;
-    width: 152px;
-    z-index: 2;
-}
+        .second{
+            order: 2;
+        }
 
-    .hero-content {
-        order: -1;
-    }
+        .eyebrowproject{
+            font-size: .8rem;
+            font-weight: 900;
+            margin-bottom: 1.2rem;
+        }
 
+        .section-title.left{
+            font-size: 2.4rem;
+            line-height: 1.2;
+        }
 
-    .hero-content{
-        font-size: 1rem;
-        max-width: 580px;
-        padding-left: 0rem;
-    }
+        .note{
+            font-size: .8rem;
+            line-height: 1.5;
+            margin-bottom: 1.2rem;
+        }
 
-    .eyebrow {
-    font-size: 1.8rem;
-    font-weight: 500;
-      margin-bottom: 1.2rem;
-}
+        .project-note {
+            font-size: .8rem;
+            line-height: 1.5;
+            margin-bottom: .2rem;
+        }
 
-.hero-header {
-    font-size: 5.5rem;
-     margin-bottom: 1.8rem;
-}
-
-.lead {
-    font-size: 1.5rem;
-    margin-bottom: 1.8rem;
-}
-
-.btn.btn-navy.btn-hero {
-    font-size: 1.5rem;
-    width: 25rem;
-    padding: 1.5rem 1.7rem;
-    font-weight: 400;
-    letter-spacing: 1.6px;
-    line-height: 1;
-}
     
 
-    .site-footer h2 {
-        font-size: 2.7rem;
+        /* ---- Project cards: alternating two-column rows ---- */
+        .project {
+            max-width: var(--container);
+            margin: 0 auto;
+            padding: 0 2.5rem 4.5rem;
+            display: flex;
+            align-items: center;
+            gap: 4rem;
+            justify-content: center;
+        }
+
+        .project-media {
+            width: 384px;
+            margin-bottom: 0;
+            padding: 0;
+        
+        }
+        .project-content{
+            width: 338px;
+            margin-bottom: 0;
+            padding: 0;
+        }
+
+        .note, .project-note {
+            width: 311px;
+        }
+
+
+
+
+
+
+        .feature-content h2 {
+            font-size: 2.2rem;
+        }
+
+        .about-content h2 {
+            font-size: 2.3rem;
+        }
+
+        .site-footer h2 {
+            font-size: 2.4rem;
+        }
     }
+
+    @media (min-width: 1200px) {
+    
+        .container{
+            width: 1200px;
+            margin: 0 auto;
+        }
+        
+
+        .site-header .logo {
+            width: 244px;
+        }
+
+    .hero-inner {
+            display: flex;
+            align-items: center;
+            gap: 7.5rem;
+            max-width: var(--container);
+            margin: 0 auto;
+            padding: 9rem 15rem 9rem 15rem;
+        }
+
+        .hero-media,
+        .hero-content {
+            flex: 1 1 50%;
+            padding: 0;
+        }
+
+    .hero-badge {
+        position: absolute;
+        top: 2rem;
+        left: -3.5rem;
+        width: 95px;
+        z-index: 2;
+    }
+
+        .hero-content {
+            order: -1;
+        }
+
+        
+
+
+        .hero-content{
+            font-size: 1rem;
+            max-width: 363px;
+            padding-left: 3rem;
+        }
+
+        .eyebrow {
+        font-size: 1.1rem;
+        font-weight: 500;
+        margin-bottom: 1.2rem;
+    }
+
+    .hero-header {
+        font-size: 3.4rem;
+        margin-bottom: 1.2rem;
+    }
+
+    .lead {
+        font-size: .93rem;
+        margin-bottom: 1rem;
+    }
+
+    .btn.btn-navy.btn-hero {
+        font-size: .93rem;
+        width: 15rem;
+        padding: 1rem .5rem;
+        font-weight: 400;
+        letter-spacing: 1.6px;
+        line-height: 1;
+    }
+
+    .projects-intro {
+            padding: 4rem 2.5rem 0rem 3rem;
+        }
+
+        .section-title {
+            font-size: 3.75rem;
+            margin-bottom: 2.6rem;
+        }
+
+        .second{
+            order: 2;
+        }
+
+        .eyebrowproject{
+            font-size: .9rem;
+            font-weight: 900;
+            margin-bottom: 1.4rem;
+        }
+
+        .section-title.left{
+            font-size: 2.8rem;
+            line-height: 1.2;
+            margin-bottom: 1.4rem;
+        }
+
+        .note{
+            font-size: .9rem;
+            line-height: 1.5;
+            margin-bottom: 1.4rem;
+        }
+
+        .project-note {
+            font-size: .9rem;
+            line-height: 1.5;
+            margin-bottom: .4rem;
+        }
+
+    
+
+        /* ---- Project cards: alternating two-column rows ---- */
+        .project {
+            max-width: var(--container);
+            margin: 0 auto;
+            padding: 0 2.5rem 4.5rem;
+            display: flex;
+            align-items: center;
+            gap: 4rem;
+            justify-content: center;
+        }
+
+        .project-media {
+            width: 450px;
+            margin-bottom: 0;
+            padding: 0;
+        
+        }
+        .project-content{
+            width: 396px;
+            margin-bottom: 0;
+            padding: 0;
+        }
+
+        .note, .project-note {
+            width: 354px;
+        }
+
+    }
+
+
+
+
+    @media (min-width: 1440px) {
+        
+        .container{
+            width: 1440px;
+            margin: 0 auto;
+        }
+        
+    .site-header .logo {
+            width: 293px;
+        }
+
+    .hero-inner {
+            display: flex;
+            align-items: center;
+            gap: 9.5rem;
+            max-width: 1920px;
+            margin: 0 auto;
+            padding: 11rem 18rem 11rem 18rem;
+        }
+
+        .hero-media,
+        .hero-content {
+            flex: 1 1 50%;
+            padding: 0;
+        }
+
+    .hero-image-desktop {
+        width: 100%;
+        border-radius: 4px;
+        display: block;
+    }
+
+    .hero-badge {
+        position: absolute;
+        top: 2rem;
+        left: -4.5rem;
+        width: 114px;
+        z-index: 2;
+    }
+
+        .hero-content {
+            order: -1;
+        }
+
+
+        .hero-content{
+            font-size: 1rem;
+            max-width: 435px;
+            padding-left: 0rem;
+        }
+
+        .eyebrow {
+        font-size: 1.35rem;
+        font-weight: 500;
+        margin-bottom: 1.2rem;
+    }
+
+    .hero-header {
+        font-size: 4.1rem;
+        margin-bottom: 1.2rem;
+    }
+
+    .lead {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+
+    .btn.btn-navy.btn-hero {
+        font-size: 1.2rem;
+        width: 22rem;
+        padding: 1.2rem 1.5rem;
+        font-weight: 400;
+        letter-spacing: 1.6px;
+        line-height: 1;
+    }
+
+
+    .projects-intro {
+            padding: 4rem 2.5rem 0rem 3rem;
+        }
+
+        .section-title {
+            font-size: 4.5rem;
+            margin-bottom: 2.8rem;
+        }
+
+        .second{
+            order: 2;
+        }
+
+        .eyebrowproject{
+            font-size: 1rem;
+            font-weight: 900;
+            margin-bottom: 1.6rem;
+        }
+
+        .section-title.left{
+            font-size: 3.37rem;
+            line-height: 1.2;
+        }
+
+        .note{
+            font-size: 1.1rem;
+            line-height: 1.5;
+            margin-bottom: 1.6rem;
+        }
+
+        .project-note {
+            font-size: 1.1rem;
+            line-height: 1.5;
+            margin-bottom: .8rem;
+        }
+
+    
+
+        /* ---- Project cards: alternating two-column rows ---- */
+        .project {
+            max-width: var(--container);
+            margin: 0 auto;
+            padding: 0 2.5rem 4.5rem;
+            display: flex;
+            align-items: center;
+            gap: 4rem;
+            justify-content: center;
+        }
+
+        .project-media {
+            width: 540px;
+            margin-bottom: 0;
+            padding: 0;
+        
+        }
+        .project-content{
+            width: 475px;
+            margin-bottom: 0;
+            padding: 0;
+        }
+
+        .note, .project-note {
+            width: 437px;
+        }
+
+        .feature-content h2 {
+            font-size: 2.4rem;
+        }
+
+        .feature-content p {
+            max-width: 480px;
+        }
+
+        .about-content h2 {
+            font-size: 2.5rem;
+        }
+
+        .testimonial h3 {
+            font-size: 1.45rem;
+        }
+    }
+
+    @media (min-width: 1920px) {
+        .container{
+            width: 1920px;
+            margin: 0 auto;
+        }
+        
+        .site-header .logo {
+            width: 390px;
+        }
+
+    .hero-inner {
+            display: flex;
+            align-items: center;
+            gap: 11.5rem;
+            max-width: 1920px;
+            margin: 0 auto;
+            padding: 14rem 18rem 14rem 18rem;
+        }
+
+        .hero-media,
+        .hero-content {
+            flex: 1 1 50%;
+            padding: 0;
+        }
+
+    .hero-image-desktop {
+        width: 100%;
+        border-radius: 4px;
+        display: block;
+    }
+
+    .hero-badge {
+        position: absolute;
+        top: 3rem;
+        left: -6rem;
+        width: 152px;
+        z-index: 2;
+    }
+
+        .hero-content {
+            order: -1;
+        }
+
+
+        .hero-content{
+            font-size: 1rem;
+            max-width: 580px;
+            padding-left: 0rem;
+        }
+
+        .eyebrow {
+        font-size: 1.8rem;
+        font-weight: 500;
+        margin-bottom: 1.2rem;
+    }
+
+    .hero-header {
+        font-size: 5.5rem;
+        margin-bottom: 1.8rem;
+    }
+
+    .lead {
+        font-size: 1.5rem;
+        margin-bottom: 1.8rem;
+    }
+
+    .btn.btn-navy.btn-hero {
+        font-size: 1.5rem;
+        width: 25rem;
+        padding: 1.5rem 1.7rem;
+        font-weight: 400;
+        letter-spacing: 1.6px;
+        line-height: 1;
+    }
+
+    .projects-intro {
+            padding: 4rem 2.5rem 0rem 3rem;
+        }
+
+        .section-title {
+            font-size: 6rem;
+            margin-bottom: 3rem;
+        }
+
+        .second{
+            order: 2;
+        }
+
+        .eyebrowproject{
+            font-size: 1.1rem;
+            font-weight: 900;
+            margin-bottom: 1.8rem;
+        }
+
+        .section-title.left{
+            font-size: 4.5rem;
+            line-height: 1.2;
+        }
+
+        .note{
+            font-size: 1.5rem;
+            line-height: 1.5;
+            margin-bottom: 1.8rem;
+        }
+
+        .project-note {
+            font-size: 1.5rem;
+            line-height: 1.5;
+            margin-bottom: 1rem;
+        }
+
+    
+
+        /* ---- Project cards: alternating two-column rows ---- */
+        .project {
+            max-width: var(--container);
+            margin: 0 auto;
+            padding: 0 2.5rem 4.5rem;
+            display: flex;
+            align-items: center;
+            gap: 4rem;
+            justify-content: center;
+        }
+
+        .project-media {
+            width: 720px;
+            margin-bottom: 0;
+            padding: 0;
+        
+        }
+        .project-content{
+            width: 634px;
+            margin-bottom: 0;
+            padding: 0;
+        }
+
+        .note, .project-note {
+            width: 583px;
+        }
+        
+
+        .site-footer h2 {
+            font-size: 2.7rem;
+        }
 }
