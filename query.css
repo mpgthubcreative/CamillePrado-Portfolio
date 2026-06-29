@@ -344,21 +344,20 @@
     font-size: 0.56rem;
  
 }
-}
+
 
         /* ---- Footer ---- */
         .site-footer {
             padding: 5rem 2.5rem;
         }
 
-        .site-footer h2 {
-            font-size: 2.2rem;
-        }
+       
 
         .footer-contacts {
             display: flex;
             justify-content: center;
             gap: 0rem;
+            font-size: .8rem;
         }
 
         .site-footer .btn {
@@ -366,6 +365,42 @@
             width: auto;
             padding: 1rem 3rem;
         }
+
+         .site-footer h2 {
+            font-size: 2.7rem;
+        }
+
+        .site-footer > p {
+            font-size: 1.2rem;
+            width: 100%;
+            }
+
+            .footer-p{
+              font-size: 1.2rem;
+                }
+
+        .contact-row{
+            font-size: 1rem;
+            gap: .5rem;
+        }
+
+        .contact-row img {
+         width: 12px;
+        height: 12px;
+        }
+
+     
+.footer-p{
+    margin: 0 auto 1.6rem auto;
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: 400;
+
+}
+        
+    }
+
+
     
 
     /* ---- Wider desktops: scale spacing & type a little further ---- */
@@ -634,18 +669,32 @@
    
 
 
-
-
-
-
-
-
-
-
-
-        .site-footer h2 {
-            font-size: 2.4rem;
+   .site-footer h2 {
+            font-size: 3.6rem;
         }
+
+        .site-footer > p {
+            font-size: 1.6rem;
+            width: 100%;
+            }
+
+            .footer-p{
+              font-size: 1.6rem;
+                }
+
+        .contact-row{
+            font-size: 1rem;
+            gap: .5rem;
+        }
+
+        .contact-row img {
+         width: 12px;
+        height: 12px;
+        }
+
+
+
+
     }
 
     @media (min-width: 1200px) {
@@ -903,6 +952,29 @@
  
 }
    
+
+   .site-footer h2 {
+            font-size: 4.2rem;
+        }
+
+        .site-footer > p {
+            font-size: 1.9rem;
+            width: 100%;
+            }
+
+            .footer-p{
+              font-size: 1.9rem;
+                }
+
+        .contact-row{
+            font-size: 1.2rem;
+            gap: .8rem;
+        }
+
+        .contact-row img {
+         width: 14px;
+        height: 14px;
+        }
 
    
 
@@ -1173,6 +1245,31 @@
     font-size: 1.5rem;
  
 }
+
+ .site-footer h2 {
+            font-size: 5.1rem;
+        }
+
+        .site-footer > p {
+            font-size: 2.2rem;
+            width: 100%;
+            }
+
+             .footer-p{
+              font-size: 2.2rem;
+                }
+
+
+        .contact-row{
+            font-size: 1.5rem;
+            gap: 1rem;
+        }
+
+        .contact-row img {
+         width: 16px;
+        height: 16px;
+        }
+
    
     }
 
@@ -1432,12 +1529,27 @@
  
 }
        
-
-
-
-
-
-        .site-footer h2 {
-            font-size: 2.7rem;
+ .site-footer h2 {
+            font-size: 6.8rem;
         }
+
+        .site-footer > p {
+            font-size: 3rem;
+            width: 100%;
+            }
+
+            .footer-p{
+              font-size: 3rem;
+                }
+
+        .contact-row{
+            font-size: 2rem;
+            gap: 1rem;
+        }
+
+        .contact-row img {
+         width: 16px;
+        height: 16px;
+        }
+
 }

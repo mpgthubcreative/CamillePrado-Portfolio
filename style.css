@@ -289,8 +289,9 @@ a {
 .websites-grid img {
     flex: 0 0 72%;
     width: 72%;
-    border-radius: 20px;
-    box-shadow: 0 10px 24px rgba(31, 58, 92, 0.1);
+    border-radius: 9px;
+    border: 1px solid #5b64702f;
+    /* box-shadow: 0px 0px 00px rgba(31, 58, 92, 0.1); */
     scroll-snap-align: start;
     padding: 2rem;
 }
@@ -460,6 +461,14 @@ a {
     width: 348px;
     height: 384px;
     padding: 2.4rem .5rem;
+   
+}
+
+.testimonial-container h3{
+   font-family: "Cormorant Garamond", serif;
+   font-style: italic;
+   font-weight: 400;
+   
 }
 
 .testimonials .section-title {
@@ -537,13 +546,23 @@ a {
     margin-bottom: 0.8rem;
 }
 
+
 .site-footer > p {
     font-size: 1.5rem;
     color: rgba(255, 255, 255, 0.85);
     margin-bottom: 1.8rem;
-    width: 24.9rem;
     margin: 0  auto 2rem  auto;
+
 }
+
+.footer-p{
+    margin: 0 auto 1.6rem auto;
+    width: 24.9rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+
+}
+
 
 .footer-contacts {
     display: flex;
@@ -573,6 +592,10 @@ a {
 
 .site-footer .btn {
     margin-top: 1rem;
+}
+
+.btn.btn-white.btn-hero.bold{
+    font-weight: 900;
 }
 
 
