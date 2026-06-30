@@ -101,7 +101,7 @@
 
         .eyebrowproject , .eyebrow-light{
             font-size: .7rem;
-            font-weight: 900;
+            font-weight: 400;
             margin-bottom: 1rem;
         }
 
@@ -109,12 +109,14 @@
             font-size: 1.8rem;
             line-height: 1.2;
             margin-bottom: 1rem;
+            font-weight: 450;
         }
 
         .note , .note.eyebrow-light {
             font-size: .6rem;
             line-height: 1.5;
             margin-bottom: 1rem;
+            font-weight: 400;
         }
 
         .project-note {
@@ -491,6 +493,7 @@
         .section-title {
             font-size: 3.2rem;
             margin-bottom: 2.4rem;
+            font-weight: 450;
         }
 
         .second{
@@ -499,19 +502,21 @@
 
         .eyebrowproject, .eyebrow-light{
             font-size: .8rem;
-            font-weight: 900;
+            font-weight: 400;
             margin-bottom: 1.2rem;
         }
 
         .section-title.left , .section-title.left.eyebrow-light{
             font-size: 2.4rem;
             line-height: 1.2;
+            font-weight: 450;
         }
 
         .note , .note.eyebrow-light { 
             font-size: .8rem;
             line-height: 1.5;
             margin-bottom: 1.2rem;
+            font-weight: 400;
         }
 
         .project-note {
@@ -777,6 +782,7 @@
         .section-title {
             font-size: 3.75rem;
             margin-bottom: 2.6rem;
+            font-weight: 450;
         }
 
         .second{
@@ -785,7 +791,7 @@
 
         .eyebrowproject, .eyebrow-light{
             font-size: .9rem;
-            font-weight: 900;
+            font-weight: 400;
             margin-bottom: 1.4rem;
         }
 
@@ -793,12 +799,14 @@
             font-size: 2.8rem;
             line-height: 1.2;
             margin-bottom: 1.4rem;
+            font-weight: 450;
         }
 
         .note , .note.eyebrow-light {
             font-size: .9rem;
             line-height: 1.5;
             margin-bottom: 1.4rem;
+            font-weight: 400;
         }
 
         .project-note {
@@ -1079,7 +1087,7 @@
 
         .eyebrowproject , .eyebrow-light{
             font-size: 1rem;
-            font-weight: 900;
+            font-weight: 400;
             margin-bottom: 1.6rem;
         }
 
@@ -1087,12 +1095,14 @@
             font-size: 3.37rem;
             line-height: 1.2;
             margin-bottom: 1.6rem;
+            font-weight: 450;
         }
 
         .note, .note.eyebrow-light{
             font-size: 1.1rem;
             line-height: 1.5;
             margin-bottom: 1.6rem;
+            font-weight: 400;
         }
 
         .project-note {
@@ -1365,18 +1375,21 @@
             font-size: 1.1rem;
             font-weight: 900;
             margin-bottom: 1.8rem;
+            font-weight: 400;
         }
 
         .section-title.left, .section-title.left.eyebrow-light {
             font-size: 4.5rem;
             line-height: 1.2;
             margin-bottom: 1.8rem;
+            font-weight: 450;
         }
 
         .note , .note.eyebrow-light {
             font-size: 1.5rem;
             line-height: 1.5;
             margin-bottom: 1.8rem;
+            font-weight: 400;
         }
 
         .project-note {
